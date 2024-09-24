@@ -1,0 +1,354 @@
+
+#contact 
+{
+    width: 100%;
+    height: auto;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    box-sizing: border-box;
+    padding: 5%;
+    overflow: hidden;
+}
+
+.contact-title 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    
+}
+
+.contact-title h2 
+{
+    font-size: var(--heading-size);
+    color: var(--primary);
+    font-family: var(--font-family-1);
+}
+
+.contact-title p 
+{
+    font-size: var(--para-size);
+    color: var(--para-color);
+    font-family: var(--font-family-2);
+}
+
+.contact-title .four-circles 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.contact-title .four-circles span
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--primary);
+}
+
+.contact-form 
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+
+}
+
+.contact-form .contact-id
+{
+    display: flex;
+    gap: 2%;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.contact-form input
+{
+    border: 0.8px solid rgb(46, 45, 45);
+    background: rgb(32, 32, 32);
+    outline: none;
+    width: 60%;
+    height: 50px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    color: white;
+    font-family: var(--font-family-2);
+}
+
+.contact-form .contact-id input
+{
+    width: 29%;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    color: white;
+    font-family: var(--font-family-2);
+}
+
+.contact-form textarea
+{
+    width: 56%;
+    outline: none;
+    border: 0.8px solid rgb(46, 45, 45);
+    background: rgb(32, 32, 32);
+    height: 150px;
+    padding: 2%;
+    color: white;
+    font-family: var(--font-family-2);
+    font-size: 1.2rem;
+}
+
+.contact-btn button
+{
+    background: transparent;
+    outline: none;
+    border: 1px solid var(--primary);
+    padding: 10px 20px;
+    font-family: var(--font-family-2);
+    color: var(--primary);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.contact-btn button:hover
+{
+    background: var(--primary);
+    color: white;
+}
+
+.contact-informations
+{
+    width: 100%;
+    height:auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:auto;
+    gap: 3em;
+}
+
+
+.contact-informations .contact-card
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    background: rgb(32, 31, 31);
+    border: 1px solid rgb(50, 50, 50);
+    /* padding: 0% 0; */
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+
+
+.contact-informations .contact-card::before
+{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: var(--primary);
+    position: absolute;
+    top: 0;
+    transform: scale(0);
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+
+.contact-informations .contact-card::after
+{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: var(--primary);
+    position: absolute;
+    bottom: 0;
+    transform: scale(0);
+    transition: all 0.5s ease-in-out;
+}
+
+.contact-informations .contact-card span 
+{
+    width: 1px;
+    height: 100%;
+    background-color: var(--primary);
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+}
+
+.contact-informations .contact-card span:first-child
+{
+    left: 0;
+    transform: scale(0);
+}
+
+.contact-informations .contact-card span:nth-child(2)
+{
+    right: 0;
+    transform: scale(0);
+}
+
+
+.contact-informations .contact-card:hover:before,.contact-informations .contact-card:hover:after,.contact-informations .contact-card:hover span:first-child,.contact-informations .contact-card:hover span:nth-child(2)
+{
+    transform: scale(1);
+} 
+
+.contact-informations .contact-card h2 
+{
+    font-family: var(--font-family-2);
+    color: white;
+    margin-top: 20px;
+}
+
+.contact-informations .contact-card h3 
+{
+    font-family: var(--font-family-2);
+    color: gray;
+    
+}
+
+.contact-informations .contact-card h3:last-child
+{
+    margin-bottom: 20px;
+} 
+
+.contact-footer 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+}
+
+.contact-footer h2 
+{
+    font-size: var(--heading-size);
+    color: var(--primary);
+    font-family: var(--font-family-1);
+}
+
+.contact-footer p 
+{
+    font-size: var(--para-size);
+    color: var(--para-color);
+    font-family: var(--font-family-1);
+}
+
+.social-media-links
+{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-links a
+{
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(25, 25, 25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid rgba(67, 66, 66, 0.525);
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.social-media-links a i 
+{
+    font-size: 2rem;
+    color: rgb(51, 50, 50);
+    transition: all 0.5s ease-in-out;
+}
+
+.social-media-links a:hover 
+{
+    border: 0.5px solid var(--primary);
+}
+
+.social-media-links a:hover i 
+{
+    color: var(--primary);
+}
+
+.mader 
+{
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    position: relative;
+    padding: 2% 0;
+    display: flex;
+    justify-content: flex-end;
+  
+}
+
+.mader .maded 
+{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+
+.mader i 
+{
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+.mader h3 
+{
+    font-family: var(--font-family-1);
+    font-size: 1.1rem;
+   
+    
+}
+
+@media screen and (max-width:900px) 
+{
+
+    
+    .contact-informations
+    {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,auto);
+    }
+
+}
+
+@media screen and (max-width:700px) {
+
+    .contact-form .contact-id
+    {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .contact-form .contact-id input 
+    {
+        width:60%;
+    }
+
+    .contact-informations
+    {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,auto);
+    }
+    
+}
+

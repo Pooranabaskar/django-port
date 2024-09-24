@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'assets/p_logo.jpg' %}">
+    <title>Live On Portfolia</title>
+    {% comment %} <script src="https://unpkg.com/animate-css-grid@latest"></script> {% endcomment %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'css/header_content.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'css/services.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'css/resume.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'css/portfolia.css'%}?{% now 'U' %}"> 
+    <link rel="stylesheet" href="{% static 'css/team_member.css'%}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'css/pricing.css'%}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'css/testimonials.css'%}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'css/blog.css'%}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'css/contact.css'%}?{% now 'U' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    {% comment %} <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer> {% endcomment %}
+    <script src="{% static 'js/header.js' %}" defer></script>
+    <script src="{% static 'js/header_content.js' %}" defer></script>
+    <script src="{% static 'js/about.js' %}" defer></script>
+    <script src="{% static 'js/services.js' %}" defer></script>
+    <script src="{% static 'js/resume.js' %}" defer></script>
+    <script type="module" src="{% static 'js/portfolia.js'%}" defer></script>
+    <script src="{% static 'js/teammember.js'%}" defer></script>
+    <script src="{% static 'js/pricing.js'%}" defer></script>
+    <script src="{% static 'js/testimonials.js'%}" defer></script>
+    <script type='module' >
+         import animateCSSGrid from 'animate-css-grid'
+    </script>
+    
+</head>
+
+<body>
+
+    {% include 'header.html' %}
+    {% include "header_content.html" %}
+    {% include "about.html" %} 
+    {% include "services.html" %}
+    {% include "resume.html" %}
+    {% include "Portfolia.html" %}
+    {% include "team_member.html"%}
+    {% include "pricing.html" %} 
+    {% include "testimonials.html" %}
+    {% include "blog.html" %}
+    {% include "contact.html" %}
+      
+</body>
+</html>

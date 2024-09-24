@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+
+#About 
+{
+    width: 100%;
+    height:auto;
+    padding: 7% 0;
+    box-sizing: border-box;
+    background-color: #111111;
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    overflow: hidden;
+}
+
+.about-title 
+
+{
+    max-width: auto;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-title h3 
+{
+   font-size: 3rem;
+   color: rgb(245, 88, 90);
+   letter-spacing: 1px;
+   text-align: center;
+   font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+
+.about-title p 
+{
+    font-family: "poppins",sans-serif;
+    color: gray;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-align: center;
+
+}
+
+.about-title span
+{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(245, 88, 90);
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+    left: 42%;
+    margin-top: 2em;
+}
+
+.about-content {
+    display: flex;
+    width: 100%;
+    padding-left: 3%;
+    box-sizing: border-box;
+    gap: 4em;
+}
+
+.about-image
+{
+    width: 30%;
+    height: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.251);
+
+}
+
+.about-details
+{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.about-image img 
+{
+    width: 102%;
+    height: 100%;
+    position: relative;
+    top: -8px;
+    left: -20px;
+    
+
+}
+
+.about-name 
+{
+    color: white;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    position: relative;
+}
+
+.about-name h3 
+{
+    color: white;
+    word-spacing: 4px;
+}
+
+.about-name::before
+{
+    content: '';
+    width: 10%;
+    height: 4px;
+    background-color: rgb(245, 88, 90);
+    position: absolute;
+    bottom: -20px;
+    
+}
+
+.about-para 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.about-para p 
+{
+    width: 100%;
+    color: rgba(255, 255, 255, 0.829);
+    font-family: "poppins",sans-serif;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    
+}
+
+.about-personal-details
+{
+   display: flex;
+   gap:2rem;
+   width: 100%;
+   height: auto;
+   overflow: hidden;
+   box-sizing: border-box;
+}
+
+.personal-details-col-1 ul ,.personal-details-col-2 ul
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    list-style: none;
+    color: rgb(56, 55, 55);
+    font-family: "poppins",sans-serif;
+    font-weight: 400;
+    gap: 0.7em;
+}
+
+.personal-details-col-1 ul li,.personal-details-col-2 ul li 
+{
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+
+}
+
+.personal-details-col-1 ul li h3,.personal-details-col-2 ul li h3
+{
+   width: 20em;
+   font-size: 1rem;
+   font-weight: 400;
+   color: gray;
+}
+
+.personal-details-col-1 ul li i,.personal-details-col-2 ul li i
+{
+    color: rgb(245, 88, 90);
+    font-size: 1.5rem;
+}
+
+
+@media screen and (max-width:1000px) {
+
+
+    .about-content 
+    {
+        flex-direction: column;
+    }
+
+    .about-image 
+    {
+        width: 100%;
+
+    }
+
+    .about-details
+    {
+        width: 100%;
+    }
+
+    .about-personal-details 
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,397 @@
+
+#resume 
+{
+    min-width: 100%;
+    height: auto;
+    background-color: rgba(20, 20, 20, 0.772);
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 6em;
+}
+
+
+.resume-title 
+{
+   display: flex;
+   flex-direction: column;
+   gap: 1em;
+   align-items: center;
+}
+
+.resume-title h2 
+{
+    font-family: var(--font-family-1);
+    color: var(--primary);
+    font-size:var(--heading-size);
+}
+
+.resume-title p 
+{
+    font-family: var(--font-family-2);
+    color: var(--para-color);
+    font-size: var(--para-size);
+}
+
+.resume-title .four-circles 
+{
+    display: flex;
+    gap: 5px;
+
+}
+
+.resume-title .four-circles span 
+{
+    width: var(--circle-size);
+    height: var(--circle-size);
+    background-color: var(--primary);
+    border-radius: var(--circle-radius);
+}
+
+.resume-content 
+{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    min-width: 100%;
+    height:60%;
+    font-family: var(--font-family-1);
+    padding-right: 20px;
+}
+
+.resume-sub-content 
+{
+    min-width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    box-sizing: border-box;
+
+}
+
+.resume-card-title 
+{
+    display: flex;
+    align-items: center;
+
+    min-width: 200px;
+    max-width: 200px;
+    gap:1em;
+    background-color: var(--primary);
+    padding: 2% 2%;
+    
+}
+
+.resume-card-title i  
+{
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    margin-left: auto;
+
+}
+
+.resume-card-title h2 
+{
+    color: var(--secondary-color);
+    font-size:1.2rem;
+  
+    margin-right: auto;
+}
+
+.resume-card-wrapper 
+{
+    min-width: 100%;
+    height: 250px;
+    background-color:rgb(27, 27, 27);
+  
+}
+
+.resume-card-wrapper .card-container 
+{
+    min-width: 100%;
+    height: 100%;
+    background: transparent;
+    display:flex;
+    overflow:hidden;
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+    gap: 1em;
+    /* scroll-snap-type: mandatory !important; */
+    scrollbar-width:none;
+
+  
+}
+
+.card-container.no-transition 
+{
+    scroll-behavior: auto !important;
+}
+
+.resume-card-wrapper .card-container .card 
+{
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+    user-select: none;
+    position: relative;
+}
+
+.resume-card-wrapper .card-container .card h2,h3
+{
+    color: var(--primary);
+    font-size: 1rem;
+    max-width: 90%;
+    
+  
+   
+}
+
+.resume-card-wrapper .card-container .card p 
+{
+    color: var(--secondary-color);
+    max-width: 90%;
+    
+   
+    
+}
+
+.three-circles 
+{
+    display: flex;
+    width: 10%;
+    gap: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    
+}
+
+.three-circles span 
+{
+    width:var(--circle-size);
+    height: var(--circle-size);
+    border-radius: var(--circle-size);
+    border: 2px solid rgb(49, 49, 49);
+   
+}
+
+.three-circles span:first-child
+{
+    border: 2px solid var(--primary);
+}
+
+
+.resume-skills 
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 0em;
+   
+}
+
+.skills,.facts 
+{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
+.skill-title,.fact-title
+{
+    width: 200px;
+    background-color: var(--primary);
+    font-family: var(--font-family-1);
+    font-size: 0.7rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    gap: 5px;
+    font-weight: 100 !important;
+}
+
+.skill-title i,.fact-title i
+{
+    font-size: 1.5rem;
+}
+
+
+.skill-content,.fact-content 
+{
+    display: flex;
+    gap: 8em;
+}
+
+.skills-sub-content,.fact-sub-content
+{
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
+.skills-sub-content li 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.skills-sub-content li h3 
+{
+    font-family: var(--font-family-2);
+    color: var(--secondary-color);
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.skill-icons 
+{
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+
+.fact-content
+{
+    gap: 2em;
+}
+
+.fact-sub-content-card
+{
+    display: flex;
+    gap: 5px;
+    width: auto;
+    height: 80px;
+    padding: 0 20px;
+    background-color: rgb(33, 32, 32);
+    border: 0.5px solid rgba(71, 70, 70, 0.603);
+    align-items: center;
+    
+    
+}
+
+.fact-sub-content-card i 
+{
+    font-size: 2.5rem;
+    color: var(--primary);
+    padding-right: 20px;
+}
+
+.fact-sub-content-card-details
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding-left: 20px;
+    height:100%;
+    border-left: 0.5px solid rgba(71, 70, 70, 0.603);
+    
+
+}
+
+.fact-sub-content-card-details h2
+
+{
+    color: var(--secondary-color);
+    font-family: var(--font-family-2);
+
+}
+
+.fact-sub-content-card-details h4 
+{
+    color: gray;
+    font-family: var(--font-family-2);
+    font-weight: 300;
+}
+
+
+@media screen and (max-width:1000px) {
+
+   .resume-skills
+   {
+    flex-direction: column;
+    gap: 4em;
+   }
+
+   .fact-sub-content-card
+   {
+    width: 230px;
+   }
+    
+   .fact-content
+   {
+       gap: 2em;
+   }
+
+   .fact-sub-content
+   {
+       gap: 2em;
+   }
+}
+
+@media screen and (max-width:600px) {
+
+    
+
+    .resume-content
+    {
+       flex-direction: column;
+       max-width: 100%;
+    }
+
+    .resume-sub-content 
+    {
+        max-width: 90%;
+    }
+
+   
+    
+
+    .resume-card-wrapper
+    {
+        max-width:100%;
+        height: 300px;
+
+    }
+
+    .resume-skills
+    {
+        flex-direction: column;
+        gap: 4em;
+        padding-left:5%;
+    }
+
+    .skill-content,.fact-content 
+    {
+        flex-direction: column;
+    }
+
+    .skill-content,.fact-content 
+    .fact-sub-content-card
+    {
+        width: 230px;
+    }
+
+    .fact-content
+    {
+        gap: 2em;
+    }
+
+    .fact-sub-content
+    {
+        gap: 2em;
+    }
+}

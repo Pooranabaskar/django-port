@@ -1,0 +1,192 @@
+
+#Portfolia
+{
+    width: 100%;
+    height:auto;
+    padding: 5%;
+    box-sizing: border-box;
+    background-color: rgb(25, 25, 25);
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    overflow: hidden;
+}
+
+.portfolia-title
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+}
+
+.portfolia-title h2 
+{
+    font-size: var(--heading-size);
+    color: var(--primary);
+    font-style: var(--font-family-1);
+}
+
+.portfolia-title p 
+{
+    font-style: var(--font-family-2);
+    color: var(--para-color);
+    font-size: var(--para-size);
+
+}
+
+.portfolia-title .four-circles
+{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.portfolia-title .four-circles span
+{
+    width: var(--circle-size);
+    height: var(--circle-size);
+    border-radius: var(--circle-radius);
+    background-color: var(--primary);
+
+}
+
+
+
+
+
+.gallery-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+   
+    
+}
+
+.gallery-links 
+{
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.gallery-links button 
+{
+    outline: none;
+    background:rgb(39, 38, 38);
+    border:none;
+    color:gray;
+    padding: 10px 20px;
+}
+
+
+
+.gallery-links .btn-focus
+{
+    background-color: rgb(244, 94, 94);
+    color: white;
+}
+
+.gallery-items
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:auto auto;
+    gap: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.gallery-items .item img 
+{
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-items .item 
+{
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    display: none;
+    
+}
+
+.gallery-items .item::before
+{
+    position: absolute;
+    content: 'Project Title';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 90%;
+    background-color: rgba(21, 21, 21, 0.806);
+    z-index: 100;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 20px;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    
+}
+
+.gallery-items .item span 
+{
+    position: absolute;
+    top: 60px;
+    left: 32px;
+    z-index: 150;
+    font-size: 1.2rem;
+    color: rgb(244, 94, 94);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.gallery-items .item:hover::before
+{
+    opacity: 1;
+    
+}
+
+.gallery-items .item:hover span 
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+
+
+.gallery-items .item.visible
+{
+    transition: all 1s linear !important;
+    display: block !important;
+    transform: scale(1);
+    opacity: 1;
+    
+}
+
+
+@media screen and (max-width:600px) {
+
+       .gallery-links
+       {
+        gap: 1em;
+       }
+
+       .gallery-items
+      {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:auto auto auto auto;
+    gap: 20px;
+    transition: all 0.5s ease-in-out;
+       }
+}
